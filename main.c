@@ -27,12 +27,12 @@ int main() {
         frontSensors.brake_pressure_2 = 0;
         frontSensors.brake_pressure_3 = 2;
 
-        frontSensors.throttle_1 = analog_Throttle(4);
+        frontSensors.throttle_1 = analog_Throttle(3);
         frontSensors.throttle_2 = analog_Throttle(5);
         frontSensors.brake = analog_Brake();
         frontSensors.steering = analog_steering();
         
-        frontSensors.brake_pressure_1 = analog_BrakePressure(10);
+        frontSensors.brake_pressure_1 = analog_BrakePressure(3);
         frontSensors.brake_pressure_2 = analog_BrakePressure(4);
         frontSensors.brake_pressure_3 = analog_BrakePressure(9);
         
