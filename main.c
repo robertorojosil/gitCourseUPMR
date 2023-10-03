@@ -27,7 +27,7 @@ int main() {
         frontSensors.brake_pressure_2 = 0;
         frontSensors.brake_pressure_3 = 2;
 
-        loggInfo(frontSensors);
+        logInfo(frontSensors);
 
         frontSensors.throttle_1 = analog_Throttle(1);
         frontSensors.throttle_2 = analog_Throttle(5);
