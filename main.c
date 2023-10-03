@@ -21,11 +21,11 @@ int main() {
 
         frontSensors.steering = 0;
         frontSensors.brake = 0;
-        frontSensors.throttle_1 = 0;
+        frontSensors.throttle_1 = 2;
         frontSensors.throttle_2 = 0;
         frontSensors.brake_pressure_1 = 0;
         frontSensors.brake_pressure_2 = 0;
-        frontSensors.brake_pressure_3 = 0;
+        frontSensors.brake_pressure_3 = 2;
 
         frontSensors.throttle_1 = analog_Throttle(4);
         frontSensors.throttle_2 = analog_Throttle(5);
@@ -33,12 +33,12 @@ int main() {
         frontSensors.steering = analog_steering();
         
         frontSensors.brake_pressure_1 = analog_BrakePressure(10);
-        frontSensors.brake_pressure_2 = analog_BrakePressure(8);
+        frontSensors.brake_pressure_2 = analog_BrakePressure(4);
         frontSensors.brake_pressure_3 = analog_BrakePressure(9);
         
         can_comm_front(&frontSensors);
 
-        time_delay(1,10);
+        time_delay(3,140);
     }
     return (EXIT_SUCCESS);
 }
