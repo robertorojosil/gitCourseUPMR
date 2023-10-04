@@ -21,11 +21,11 @@ int main() {
 
         frontSensors.steering = 0;
         frontSensors.brake = 0;
-        frontSensors.throttle_1 = 2;
+        frontSensors.throttle_1 = 3;
         frontSensors.throttle_2 = 0;
-        frontSensors.brake_pressure_1 = 0;
-        frontSensors.brake_pressure_2 = 0;
-        frontSensors.brake_pressure_3 = 2;
+        frontSensors.brake_pressure_1 = 1;
+        frontSensors.brake_pressure_2 = 1;
+        frontSensors.brake_pressure_3 = 3;
 
         frontSensors.throttle_1 = analog_Throttle(3);
         frontSensors.throttle_2 = analog_Throttle(5);
